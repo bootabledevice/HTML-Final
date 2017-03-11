@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adding Other CSS Styles</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/pagebreakdown.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+    <nav class="navbar navbar-default">
+  <div class="container">
+      <div class="navbar-header">
+      <a href="#" class="navbar-brand">
+        Web Technologies
+          </a>
+      </div>
+
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Home</a></li>
+        <li>
+          <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Content<span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+            <li><a href="HTMLEssentialTraining.html">HTML Essential Training</a></li>
+            <li><a href="Bootstrap3EssentialTraining.html">Bootstrap 3 Essential Training</a></li>
+            <li><a href="WebTechnologyFundamentals.html">Web Technology Fundamentals</a></li>
+            <li><a href="WordPressEcommerce.html">WordPress Ecommerce</a></li>
+            </ul>
+        </li>
+    </ul>
+    </div>
+</nav>
+
+<div class="content container">
+    <div class="row">
+            <div class="col-lg-12" >
+                <h2 class="page-header">Adding Other CSS Styles</h2>
+                    </div>
+<div class="panel panel-default">
+    <div class="panel-body">
+        
+    <p><img class="leftimg" src="images/PageIconsBOOT.png" align="left">
+        <h3 class="padding">Working With Bootstrap Buttons</h3>
+        Now there's three different types of elements that can be made to look like buttons: links; of course, the button tag; as well as input fields. To create a button, you simply add the class of btn, and technically, you are supposed to also add a contextual color.
+        </p>
+
+        <p><h3>Exploring Table Styles</h3>
+        Tables are great bootstrap styles because they take care of handling something that would be super difficult for you to do by yourself. Simply just add a class of table, and your table looks a lot better and that's because it's adding a bit of padding as well as some underlines underneath each row. Bootstrap also provides a series of sub-classes that you can use to enhance the tables.
+        </p>
+
+        <p><h3>Adding Images Classes</h3>
+        Bootstrap has a lot of really useful classes that can help you tame your images. Now if you have an image that is a little bit too big for their column widths. Bootstrap can make those images more responsive if you add an img-responsive class.
+        </p>
+
+        <p><h3>Understanding Bootstrap Helper Classes</h3>
+        Bootstrap has a number of miscellaneous classes that can help you take care of common styling needs. First, Bootstrap offers a number of predefined contextual colors. You'll see them reappear in a bunch of other places, as well. You can use them to highlight text colors, or backgrounds.
+        </p>
+
+        <p><h3>Using Responsive Utilities</h3>
+        Bootstrap offers a set of responsive utility classes so that you can control the visibility of certain elements. Now these classes allow you to turn visibility on or off, depending on certain responsive breakpoints, or, when the user tries to print out the page. You specify a visibility keyword, and that's visible, or hidden. Then you add a size, and those correspond to the responsive grid, so the options are the same as any of the grid breakpoints, that's XS, SM, MD, LG, and there's also an option to specify print as a breakpoint. Which means that the element will be visible, or hidden, when somebody tries to print out the page. Finally, if you're specifying that something needs to be visible at a specific breakpoint, or for print, you can optionally provide information about the display element for that breakpoint. So you can ask the element to display as a block element, an inline element, or, an in-line block element. Or you can specify that the element only shows up during printing. If you're just hiding an element you don't have to provide this part.
+        </p>  
+            
+        <h3>Button Example Code</h3>
+        <pre class="simplecode">
+            &lt;button class="btn btn-default"&gt;Default&lt;/button&gt;
+            &lt;button class="btn btn-primary"&gt;Primary&lt;/button&gt;
+            &lt;button class="btn btn-success"&gt;Success&lt;/button&gt;
+            &lt;button class="btn btn-info"&gt;Info&lt;/button&gt;
+            &lt;button class="btn btn-warning"&gt;Warning&lt;/button&gt;
+            &lt;button class="btn btn-danger"&gt;Danger&lt;/button&gt;
+            &lt;button class="btn btn-default"&gt;Default&lt;/button&gt;
+            &lt;button class="btn btn-default btn-lg"&gt;Large&lt;/button&gt;
+            &lt;button class="btn btn-default btn-sm"&gt;Small&lt;/button&gt;
+            &lt;button class="btn btn-default btn-xs"&gt;Extra Small&lt;/button&gt;
+            &lt;button class="btn btn-default btn-block"&gt;Block Level&lt;/button&gt;
+        </pre>
+
+        <h3>Table Styles Example Code</h3>
+        <pre class="simplecode">
+            &lt;div class="container"&gt;
+            &lt;div class="row"&gt;
+                &lt;section class="col-xs-12"&gt;
+            &lt;div class="table-responsive"&gt;
+                &lt;table class="table table-condensed"&gt;
+                    &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Class&lt;/th&gt;
+                        &lt;th&gt;Color&lt;/th&gt;
+                        &lt;th&gt;Description&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;tbody&gt;
+                        &lt;tr&gt;
+                            &lt;th scope="row"&gt;Normal&lt;/th&gt;
+                            &lt;td class="active"&gt;Default&lt;/td&gt;
+                            &lt;td&gt;Default color to a particular row or cell&lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                &lt;/table&gt;
+                &lt;/div&gt;
+                &lt;/section&gt;
+            &lt;/div&gt;
+            &lt;/div&gt;
+        </pre>
+
+        <h3>Image Classes Example Code</h3>
+        <pre class="simplecode">
+        &lt;img src="images/drsanders.jpg" class="img-thumbnail img-responsive center-block" alt="Dr Sanders Photo"&gt;
+        </pre>
+
+        <h3>Helper Classes Example Code</h3>
+        <pre class="simplecode">
+            &lt;button class="btn btn-default"&gt;Default&lt;/button&gt;
+            &lt;button class="btn btn-primary"&gt;Primary&lt;/button&gt;
+            &lt;button class="btn btn-success"&gt;Success&lt;/button&gt;
+            &lt;button class="btn btn-info"&gt;Info&lt;/button&gt;
+            &lt;button class="btn btn-warning"&gt;Warning&lt;/button&gt;
+            &lt;button class="btn btn-danger"&gt;Danger&lt;/button&gt;
+        </pre>
+
+        <h3>Responsive Utilities Example Code</h3>
+        <pre class="simplecode">
+        &lt;p&gt;&lt;span class="h1 visible-print-block" style="width: 400px;"&gt;Example&lt;/span&gt;
+        </pre>
+        
+    </div>
+</div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Content Containers</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/pagebreakdown.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+    <nav class="navbar navbar-default">
+  <div class="container">
+      <div class="navbar-header">
+      <a href="#" class="navbar-brand">
+        Web Technologies
+          </a>
+      </div>
+
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Home</a></li>
+        <li>
+          <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Content<span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+            <li><a href="HTMLEssentialTraining.html">HTML Essential Training</a></li>
+            <li><a href="Bootstrap3EssentialTraining.html">Bootstrap 3 Essential Training</a></li>
+            <li><a href="WebTechnologyFundamentals.html">Web Technology Fundamentals</a></li>
+            <li><a href="WordPressEcommerce.html">WordPress Ecommerce</a></li>
+            </ul>
+        </li>
+    </ul>
+    </div>
+</nav>
+
+<div class="content container">
+    <div class="row">
+            <div class="col-lg-12" >
+                <h2 class="page-header">Content Containers</h2>
+                    </div>
+<div class="panel panel-default">
+    <div class="panel-body">
+        
+    <p><img class="leftimg" src="images/PageIconsBOOT.png" align="left">
+        <h3 class="padding">Styling List Groups</h3>
+        List groups are a way of displaying list type content in a box that makes it similar to the type of interfaces that you would see on mobile devices. So you can combine them with other media types and there's actually a couple of ways of doing these so we're going to get into those. 
+        </p>
+
+        <p><h3>Working With Panels</h3>
+        Panels are another way to encapsulate content in Bootstrap. They're similar to what you can do with thumbnails and even list groups, but they have a different structure that makes a little more semantic sense. Plus, you can combine these with tables and list groups to create slightly more complex layouts than you can do with something like a thumbnail.
+        </p>
+
+        <p><h3>Using Wells</h3>
+        Wells are sort of a super-simpler version of panels. Think of them as a variation on a blockquote. It gives the element essentially an inset effect, and it boxes them.
+        </p>
+        
+        <h3>List Groups Example Code</h3>
+        <pre class="simplecode">
+            &lt;ul class="list-group"&gt;
+                &lt;li class="list-group-item"&gt;First item&lt;/li&gt;
+                &lt;li class="list-group-item"&gt;Second item&lt;/li&gt;
+                &lt;li class="list-group-item"&gt;Third item&lt;/li&gt;
+            &lt;/ul&gt;
+        </pre>
+    
+        <h3>Panels Example Code</h3>
+        <pre class="simplecode">
+            &lt;div class="panel panel-default"&gt;
+                &lt;div class="panel-body">A Basic Panel&lt;/div&gt;
+            &lt;/div&gt;
+        </pre>
+    
+        <h3>Wells Example Code</h3>
+        <pre class="simplecode">
+            &lt;div class="well"&gt;Basic Well&lt;/div&gt;
+        </pre>
+        
+    </div>
+</div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

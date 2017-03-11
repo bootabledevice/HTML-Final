@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Introduction To The Web</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/pagebreakdown.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+    <nav class="navbar navbar-default">
+  <div class="container">
+      <div class="navbar-header">
+      <a href="#" class="navbar-brand">
+        Web Technologies
+          </a>
+      </div>
+
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Home</a></li>
+        <li>
+          <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Content<span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+            <li><a href="HTMLEssentialTraining.html">HTML Essential Training</a></li>
+            <li><a href="Bootstrap3EssentialTraining.html">Bootstrap 3 Essential Training</a></li>
+            <li><a href="WebTechnologyFundamentals.html">Web Technology Fundamentals</a></li>
+            <li><a href="WordPressEcommerce.html">WordPress Ecommerce</a></li>
+            </ul>
+        </li>
+    </ul>
+    </div>
+</nav>
+
+<div class="content container">
+    <div class="row">
+            <div class="col-lg-12" >
+                <h2 class="page-header">Introduction To The Web</h2>
+                    </div>
+<div class="panel panel-default">
+    <div class="panel-body">
+        
+        <p><img class="leftimg" src="images/PageIconsWEBTECH.png" align="left">
+        <h3 class="padding">Understanding How The Web Works</h3>
+        As a web designer, it's important to understand how the web works and the processes involved in hosting, serving, and rendering websites. By understanding the terminology and underlying technology, you'll create more efficient sites and have a concrete understanding of why you do the things that you do. The Internet is a term that's used to refer to a massive network of millions of computers all over the world that are used to share and transmit information. This is done through various protocols and languages and includes things like email, SMS messaging, application data, as well as the web itself. The World Wide Web, which is usually shortened to just the web, is way of transmitting data over the Internet using the HTTP protocol and HTML. The web can be summarized as a series of interactions between two types of systems, clients and servers. Clients are the devices that request and render web content. Popular clients include browsers, mobile applications, screen readers, and the various content aggregators. </p>
+
+<h3>Working With Clients And Servers</h3>
+    <p>Every time you click a link or type a URL into your browser, a request for that content is made to a server. As with most processes, there's a little bit more going on behind the scenes. When your browser makes a request, it uses a URL or uniform resource locator to locate the requested content. This request is usually passed on to a domain name server or DNS. The DNS then translates the URL into an IP address. The browser then uses this IP address to locate the host's server and send a request for the content. Based on the type of files requested, several things take place next. If the request is a simple HTML page, the HTML text is sent to the browser where it's rendered and presented to the user. If the page contains additional requests, such as CSS or images, those requests are presented to the server, the resources are downloaded, and the resulting content is rendered as well. Any client-side scripts such as JavaScript, triggered by the document loading, are also executed at this point. </p>
+
+<h3>The DNS And Why It Matters</h3>
+    <p>Domain name servers, or DNS, address one of the fundamental differences between humans and computers. When a web server hosts a website the site is assigned a unique IP address that's used to identify its location. The IP address for google.com for example, is 216.58.219.46. While computers find working with these long strings of numbers very, very simple, humans struggle to remember them. Imagine trying to remember the IP addresses of every single website you frequent. So, in order to make the web a little bit more usable for us humans, every website is also assigned a unique domain name that's been associated with the site's IP, and that is where the DNS comes in. </p>
+
+<h3>Internet Protocols</h3>
+    <p>Protocols are simple languages that let one computer share data with another, regardless of software or operating system. The internet uses a loose framework of protocols often referred to as the Internet Protocol Suite. This suite contains multiple types of protocols. That are designed for specific tasks such as networking rules and data transfer. You've also probably heard this protocol suite referred to as TCP/IP, which is short for transmission control protocol and the internet protocol. First formalized in 1973, this series of protocols have evolved to become the backbone of the Internet and is the main way that data is sent and received. </p>
+
+<h3>Exploring HTTP</h3>
+    <p>HTTP stands for hypertext transfer protocol. And it's the standard protocol for transferring resources on the web. Now, remember a protocol is simply a standardized format for transmitting data between two devices. In this case, your browser is an HTTP client while the web server that hosts the requested site is an HTTP server. Now the browser sends an HTTP request explaining which resources that it requires. And that, in turn, prompts the server to send an HTTP response which, in most cases, includes the resources that were requested. </p>
+
+<h3>Anatomy Of A URL</h3>
+    <p>URL is short for Uniform Resource Locator. Although we tend to think of them as a single entity that's used for links or web addresses, they're actually made up of several parts. And the syntax used within them helps servers determine what type of file you're looking for, where to find that file, and can also pass along several optional parameters to the server. </p>
+
+<h3>How Browsers Work</h3>
+    <p>When a user clicks a link or types in a web address, the browser sends a request document to the server. The server in turn then sends the requested page and assets back to the browser. Once the requested page, usually an HTML document, is fed to the browser, the browser then uses its internal rendering engine to translate the page and then render it on the screen. Any additional content, such as images or video is requested and rendered based on whether the browser supports the file type or whether the plugins necessary to view the content are installed. Any client side scripting, typically JavaScript, is then executed in the browser when it's triggered. </p>
+
+<h3>Web Standards And The W3C</h3>
+    <p>So let's go back to the mid to late 90s. There we have two browsers. Netscape and Internet Explorer, both of them were battling each other for market dominance. Now, some refer to this period as the browser wars. In order to build better browsers with cooler capabilities, each one would release proprietary features that were not supported by any other browser.This meant that with every single new release, web designers would have to learn new ways of developing websites to take advantage of those features. This would often lead to designers needing to develop multiple versions of pages for different browsers. So it was inevitable that as the browser market became more crowded, designers and developers would really just face an impossible task when trying to create pages that looked good everywhere. So it was this environment that led to the creation of the Web Standards Project in 1998 by a group of designers and developers frustrated with the current state of browser development. They began supporting, in an organized way, the adoption of the World Wide Web Consortium recommendations. </p>
+
+<h3>Web Server Basics</h3>
+    <p>A web server is nothing really more than a computer with a specialized set of software and components. All web servers are assigned an IP address, and the sites that they host are registered through a domain name server so that requests for its pages can be found. Many web servers use virtual hosting which allows them to serve multiple websites under a single IP address. When you sign up for a hosting service, many will advertise plans that will give you the option of shared hosting versus dedicated hosting. In a shared hosting environment, your site is hosted on a web server with multiple sites, while on a dedicated plan, your site has its own server or servers. Dedicated plans usually cost a little more. Sites are stored on web servers as a series of files and folders. Which are then retrieved based on the HTTP request that it receives. Of course, it can get a little bit more complicated than that. For dynamic sites, the web server will have to process data from databases and execute any server-side scripts that are contained on the site. </p>
+
+    </div>
+</div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

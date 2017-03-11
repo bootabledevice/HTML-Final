@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Working With The Bootstrap Grid</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/pagebreakdown.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+    <nav class="navbar navbar-default">
+  <div class="container">
+      <div class="navbar-header">
+      <a href="#" class="navbar-brand">
+        Web Technologies
+          </a>
+      </div>
+
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Home</a></li>
+        <li>
+          <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Content<span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+            <li><a href="HTMLEssentialTraining.html">HTML Essential Training</a></li>
+            <li><a href="Bootstrap3EssentialTraining.html">Bootstrap 3 Essential Training</a></li>
+            <li><a href="WebTechnologyFundamentals.html">Web Technology Fundamentals</a></li>
+            <li><a href="WordPressEcommerce.html">WordPress Ecommerce</a></li>
+            </ul>
+        </li>
+    </ul>
+    </div>
+</nav>
+
+<div class="content container">
+    <div class="row">
+            <div class="col-lg-12" >
+                <h2 class="page-header">Working With The Bootstrap Grid</h2>
+                    </div>
+<div class="panel panel-default">
+    <div class="panel-body">
+        
+    <p><img class="leftimg" src="images/PageIconsBOOT.png" align="left">
+        <h3 class="padding">Understanding Bootstrap Containers</h3>
+        Now Bootstrap comes with a 12-column grid which is super common for building responsive websites. To access the grid you add CSS classes to your content and that allows you to create extremely flexible layouts. In order to take full advantage of this framework, you need to understand three key concepts, containers, rows, and columns. a Bootstrap container is declared through a special class that allows you to control the layout. Now adding this class is also going to create 15 pixels of padding on each side of the element. So the content within a layout never fully reaches the edge of the screen. So anytime you want an element to go the full width of the browser, you don't put it inside a container class. there's two types of containers, fixed, as well as fluid containers. The fluid container always adjusts to the size of the device so as you change the width of the browser, you'll see the content within a fluid container adjust. Now a fixed-width container is a little bit different. This is a container that will show a specific size, depending on the size of the viewport. Now a fixed-width container will also get 15 pixels on each side. But it also adjusts to different media breakpoints. So when your layout is extra small, which is considered less than 768 pixels, the container will go to the full width of the browser minus that little bit of padding on each side.
+        </p>
+
+        <p><h3>Working With Rows</h3>
+        So, now that you understand what the basic container class does, let's talk about rows. Now, they're a special way of setting up multi-column layouts. Rows allow you to create horizontal groups of columns. Now think of it as a line break for column groups. When you want to make sure that your columns appear on a separate horizontal group, you use rows. Now, using rows won't make sense unless you place them inside a container type, either fluid or fixed width. It doesn't really matter. But they should always go within a container. Now, when you use the row class, you should always include columns. It really doesn't make sense to create a row container without any columns inside it. Adding a row does get rid of the padding that appears on either side of a container using negative margins. That's because any columns inside a row will need to clear out the normal container padding to align to the grid properly.
+        </p>
+
+        <p><h3>Creating Columns</h3>
+        So columns are the foundation of almost any Bootstrap layout. They're going to take your design and divide it into vertical groups, that way you don't have to design your own responsive grid. You're going to just use whatever Bootstrap gives you. Now when you do create a column, you're also going to create a gutter, and the gutters by default are going to be 30 pixels wide. That means that you're going to have 15 pixels on each side of the column. So what you do to create a column is you take an element and you add a class to that element inside a row, and they should follow this format. It should say col-, and then a size, which is two letters, and then another dash, and then the number of columns that you want this layout to span, or this element that you're creating. So the size means when the column will convert into whatever you specified in the span into a single column layout. In other words, it's going to stack into a single column layout at a specific break point. The break point is going to be determined by this size parameter that you include.
+        </p>
+
+        <h3>Row, Columns, And Multiple Columns Example Code</h3>
+        <pre class="simplecode">
+            &lt;div class="row"&gt;
+                &lt;div class="col-sm-4"&gt;.col-sm-4&lt;/div&gt;
+                    &lt;div class="col-sm-4"&gt;.col-sm-4&lt;/div&gt;
+                &lt;div class="col-sm-4"&gt;.col-sm-4&lt;/div&gt;
+            &lt;/div&gt;
+        </pre>
+        
+        <h3>Columns Resetting Example Code</h3>
+        <pre class="simplecode">
+            &lt;div class="row"&gt;
+                &lt;div class="col-sm-4"&gt;.col-sm-4&lt;/div&gt;
+                    &lt;div class="clearfix visible-sm-block"&gt;&lt;/div&gt;
+                    &lt;div class="col-sm-4"&gt;.col-sm-4&lt;/div&gt;
+                &lt;div class="col-sm-4"&gt;.col-sm-4&lt;/div&gt;
+            &lt;/div&gt;
+        </pre>
+    
+        <h3>Offset Columns Example Code</h3>
+        <pre class="simplecode">
+            &lt;div class="row"&gt;
+                &lt;div class="col-lg-offset-2 col-sm-offset-2">&lt;/div&gt;
+            &lt;/div&gt;
+        </pre>
+    
+        <h3>Nesting Columns Example Code</h3>
+        <pre class="simplecode">
+        &lt;div class="row"&gt;
+            &lt;section class="col-lg-offset-2 col-sm-offset-2"&gt;
+                &lt;div class="row"&gt;
+                        &lt;div class="col-lg-1 col-lg-offset-3"&gt;
+                            &lt;img class="icon" src="images/Example.png" alt="Icon"&gt;
+                        &lt;/div&gt;
+                        &lt;div class="col-lg-5"&gt;
+                            &lt;h3>Example&lt;/h3&gt;
+                            &lt;p>Example.&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/section&gt;
+            &lt;/div&gt;
+        </pre>
+        
+        <h3>Push And Pull Columns Example Code</h3>
+        <pre class="simplecode">
+        &lt;div class="row"&gt;
+            &lt;section class="col-lg-pull-2 col-sm-push-2"&gt;
+                &lt;div class="row"&gt;
+                        &lt;div class="col-pull-1 col-lg-push-3"&gt;
+                            &lt;img class="icon" src="images/Example.png" alt="Icon"&gt;
+                        &lt;/div&gt;
+                        &lt;div class="col-lg-5"&gt;
+                            &lt;h3&gt;Example&lt;/h3&gt;
+                            &lt;p&gt;Example.&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/section&gt;
+            &lt;/div&gt;
+        </pre>
+    
+    </div>
+</div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

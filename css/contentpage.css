@@ -1,0 +1,43 @@
+h3{
+    font-style: normal;
+	font-size: 6px;
+	font-family: 'Open Sans', sans-serif;
+	padding-top: 10px;
+    padding-left: 40px;
+	text-align: left;
+    letter-spacing: 10px;
+}
+body {
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+.page-header{
+    font-weight: normal;
+    font-style: normal;
+	font-size: 45px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+    padding-bottom: 20px;
+}
+.panel-body{
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    font-weight: normal;
+    font-style: normal;
+	font-size: 45px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+    padding-bottom: 20px;
+}
+p{
+    font-weight: normal;
+    font-style: normal;
+	font-size: 17px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: left;
+    padding-bottom: 7px; 
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Structuring Content</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/pagebreakdown.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+    <nav class="navbar navbar-default">
+  <div class="container">
+      <div class="navbar-header">
+      <a href="#" class="navbar-brand">
+        Web Technologies
+          </a>
+      </div>
+
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Home</a></li>
+        <li>
+          <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Content<span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+            <li><a href="HTMLEssentialTraining.html">HTML Essential Training</a></li>
+            <li><a href="Bootstrap3EssentialTraining.html">Bootstrap 3 Essential Training</a></li>
+            <li><a href="WebTechnologyFundamentals.html">Web Technology Fundamentals</a></li>
+            <li><a href="WordPressEcommerce.html">WordPress Ecommerce</a></li>
+            </ul>
+        </li>
+    </ul>
+    </div>
+</nav>
+    
+<div class="content container">
+    <div class="row">
+            <div class="col-lg-12" >
+                <h2 class="page-header">Structuring Content</h2>
+                    </div>
+<div class="panel panel-default">
+    <div class="panel-body">
+        
+    <p><img class="leftimg" src="images/PageIconsHTML.png" align="left">
+        <h3 class="padding">The Value Of Structure</h3>
+        One of the major benefits of HTML is that it allows us to structure documents in a way that illustrates the meaning of the content. This is often referred to as semantics. And it's an important part of the web authoring process. Most of the time content in a web page fits within specific sections. You might have the company information up top in a heading. The site navigation and a section below that followed by the main content and perhaps, a sidebar with some related information below it. Below everything else, there might be a footer that contains contact information or other information related to the site.
+    </p>
+
+        <p><h3>Controlling Document Outlines</h3>
+            One of the first things to consider when structuring your pages is what type of document outline you want to generate. HTML uses semantic elements like headings and sectioning tags to describe the outline of a page's contents. In many ways, you can think of this like a table of contents. These outlines are used by devices to skim and search your files, navigate to specific sections. And things like determining how content actually relates to each other.
+        </p>
+
+        <p><h3>The NAV Element</h3>
+            The nav element it's one of the section elements that are brand new, introduced in HTML5. The nav element represents a section of a page that links to other pages or parts within the page, a section with navigation links.
+        </p>
+
+        <p><h3>The Article Element</h3>
+            The article element represents a complete self-contained composition in a document, page, application or site. And that is, in principle, independently distributable or reusable. These could be things like forum posts, magazine or newspaper articles, blog entries, user-submitted comments, interactive widgets, and much more.
+        </p>
+
+        <p><h3>The Section Element</h3>
+            The section element is not a generic container element. When an element is needed only for styling purposes or as a convenience for scripting, authors are encouraged to use the div element instead. A general rule is that the section element is appropriate only if the element's contents would be listed explicitly in the document's outline.
+        </p>
+
+        <p><h3>The Aside Element</h3>
+            The aside element represents a section of a page that consists of content that is tangentially related to the content around the aside element, and which could be considered separate from that content. Such sections are often represented as sidebars in printed typography.
+        </p>
+
+        <p><h3>The Div Element</h3>
+            The div element has no special meaning at all. It represents its children. It can be used with the class, lang, and title attributes to mark up semantics common to a group of consecutive elements.
+        </p>
+
+        <p><h3>Other Semantic Elements</h3>
+            The header element represents introductory content for its nearest ancestor sectioning content or sectioning root element. A header typically contains a group of introductory or navigational aids. The footer element represents a footer for its nearest ancestor sectioning content or sectioning root element. A footer typically contains information about its section such as who wrote it, links to related documents, copyright data, and the like.
+        </p>
+
+
+        <h3>NAV Example Code</h3>
+        <pre class="simplecode">
+         &lt;nav&gt;
+             &lt;a href="/html/">HTML &lt;/a&gt;
+             &lt;a href="/css/">CSS &lt;/a&gt;
+             &lt;a href="/js/">JavaScript &lt;/a&gt;
+             &lt;a href="/jquery/">jQuery &lt;/a&gt;
+         &lt;/nav&gt;
+        </pre>
+        
+        <h3>Article Example Code</h3>
+        <pre class="simplecode">
+            &lt;article&gt;
+                &lt;h1>Google Chrome&lt;/h1&gt;
+                &lt;p&gt;
+                Google Chrome is a free, open-source web browser developed by Google, released in 2008.
+                &lt;/p&gt;
+            &lt;/article&gt;
+        </pre>
+        
+        <h3>Section Example Code</h3>
+        <pre class="simplecode">
+            &lt;section&gt;
+                &lt;h1&gt;WWF&lt;/h1&gt;
+                &lt;p&gt;
+                The World Wide Fund for Nature (WWF) is....
+                &lt;/p&gt;
+            &lt;/section&gt;
+        </pre>
+        
+        <h3>Aside Example Code</h3>
+        <pre class="simplecode">
+            &lt;aside&gt;
+                &lt;h4>Epcot Center&lt;/h4&gt;
+                &lt;p&gt;
+                The Epcot Center is a theme park in Disney World, Florida.
+                &lt;/p&gt;
+            &lt;/aside&gt;
+        </pre>
+        
+        <h3>DIV Example Code</h3>
+        <pre class="simplecode">
+            &lt;div&gt;
+                &lt;h3&gt;This is a heading&lt;/h3&gt;
+                &lt;p&gt;
+                This is a paragraph.
+                &lt;/p&gt;
+            &lt;/div&gt;
+        </pre>
+        
+        <h3>Header Example Code</h3>
+        <pre class="simplecode">
+            &lt;article&gt;
+            &lt;header&gt;
+                &lt;h1&gt;Most important heading here&lt;/h1&gt;
+                &lt;h3&gt;Less important heading here&lt;/h3&gt;
+                &lt;p&gt;Some additional information here&lt;/p&gt;
+            &lt;/header>
+                &lt;p&gt;Lorem Ipsum dolor set amet....&lt;/p&gt;
+            &lt;/article&gt;
+        </pre>
+        
+        <h3>Footer Example Code</h3>
+        <pre class="simplecode">
+            &lt;footer&gt;
+                &lt;p&gt;Posted by: Hege Refsnes&lt;/p&gt;
+                &lt;p&gt;Contact information: &lt;a href="mailto:someone@example.com"&gt;
+                someone@example.com&lt;/a&gt;.&lt;/p&gt;
+            &lt;/footer&gt;
+        </pre>
+        
+    </div>
+</div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

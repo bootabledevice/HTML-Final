@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exploring Basic Bootstrap CSS Classes</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/pagebreakdown.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+    <nav class="navbar navbar-default">
+  <div class="container">
+      <div class="navbar-header">
+      <a href="#" class="navbar-brand">
+        Web Technologies
+          </a>
+      </div>
+
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Home</a></li>
+        <li>
+          <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Content<span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+            <li><a href="HTMLEssentialTraining.html">HTML Essential Training</a></li>
+            <li><a href="Bootstrap3EssentialTraining.html">Bootstrap 3 Essential Training</a></li>
+            <li><a href="WebTechnologyFundamentals.html">Web Technology Fundamentals</a></li>
+            <li><a href="WordPressEcommerce.html">WordPress Ecommerce</a></li>
+            </ul>
+        </li>
+    </ul>
+    </div>
+</nav>
+
+<div class="content container">
+    <div class="row">
+            <div class="col-lg-12" >
+                <h2 class="page-header">Exploring Basic Bootstrap CSS Classes</h2>
+                    </div>
+<div class="panel panel-default">
+    <div class="panel-body">
+        
+    <p><img class="leftimg" src="images/PageIconsBOOT.png" align="left">
+        <h3 class="padding">Styling Headings And Body Copy</h3>
+        Now Bootstrap uses Helvetica Neue if it's available and then tries to look for Helvetica, Arial, and if nothing else is available, it uses the default CSS sans-serif font. Whatever might be there for your machine. Now, of course, you have the standard styles for headlines level one through level six, but what you might not be aware of is that you can also use the classes h1 through h6 and that will actually emulate a headline of that level. You can very easily say something like div, with a class of "h1" and I'll do a Headline 1 and it looks pretty much like the Headline Level 1. Actually, it uses the same style. You can use that to emulate that same style somewhere else or if you want to, for example, have a certain word look like the same font as your headline, you can do that by adding "span" class.
+        </p>
+
+        <p><h3>Analyzing Inline Text Styles</h3>
+        Bootstrap comes with a few built-in styles for traditional inline elements. A lot of these are going to be implementations of existing HTML tags that you're already using, so you just write them how you would normally, but you just have to notice that Bootstrap is actually modifying some of those styles. That means that, if you're going to be updating those styles with CSS, you have to address what Bootstrap has already done to them. Using some of these are also going to bring up some important semantic differences between the different tags.
+        </p>
+
+        <p><h3>Modifying Alignment Transformation And Addreviations</h3>
+        some of the other utility classes that you get with Bootstrap. Now first, Bootstrap comes with a series of alignment classes for text elements. This is the type of thing that you may commonly add to your stylesheets, but Bootstrap gives you a class that you can add to your HTML elements, and they have quite a bit of specificity.
+        </p>
+
+        <p><h3>Using Blockquotes</h3>
+        Bootstrap does a nice job of styling blockquotes for you, and it provides a class to reverse the alignment of it.t indents it nicely, makes it a little bigger, and it adds this nice, great border to it. Now those are all things that if you are overwriting your styles with CSS, you'll need to remember to take out.
+        </p>
+
+        <p><h3>Working With List Styles</h3>
+        HTML has three different types of lists: unordered lists for items in no particular order, ordered lists where the order of the items has relevance, and definition lists for dictionary-type definitions. If, for some reason, you want to turn off styling in a list, you can add the list unstyle class to a list element. But notice that it only affects one of the levels. So if you had any sublevels you would have to add that list-unstyled class in this other section as well. You can also make lists appear in-line as opposed to their default block style, and Bootstrap will add a little bit of padding to it. Just add a class of list-inline it gets rid of the bullets, puts them side by side, and adds a little bit of padding in between each item. For definition lists, there's a really nice option for making them appear in a horizontal layout. All you have to do is add a dl-horizontal class.
+        </p>
+
+        <p><h3>Styling Code</h3>
+        Bootstrap comes with a few styles that can help you format code. Now most of these are going to be style implementations of existing html tags. Now just remember that if you do want to use html code you're going to have to escape the angled brackets. So you would have to do "&"lt; and then "&"gt;.
+        </p>
+        
+        <h3>Styling Headings And Body Example Code</h3>
+        <pre class="simplecode">
+            &lt;h1&gt;Headline 1 &lt;small&gt;Secondary Text&lt;/small&gt;&lt;/h1&gt;
+            &lt;p&gt;Example &lt;span class="small"&gt;Example&lt;/span&gt;Example &lt;span class="h1"&gt;Example&lt;/span&gt; Example
+            &lt;/p&gt;
+        </pre>
+        
+        <h3>Inline Text Styles Example Code</h3>
+        <pre class="simplecode">
+            &lt;h1&gt;Headline 1 &lt;small&gt;Secondary Text&lt;/small&gt;&lt;/h1&gt;
+            &lt;p&gt;Example&lt;mark&gt;Example&lt;/mark&gt;, &lt;strong&gt;Example&lt;/strong&gt; &lt;small&gt;Example&lt;/small&gt;. &lt;b&gt;Example&lt;/b&gt;Example&lt;s&gt;Example&lt;/s&gt; Example &lt;del&gt;Example&lt;/del&gt; &lt;ins&gt;Example&lt;/ins&gt;Example&lt;u&gt;Example&lt;/u&gt;Example&lt;/p&gt;
+        </pre>
+        
+        <h3>Alignment Example Code</h3>
+        <pre class="simplecode">
+            &lt;blockquote class="blockquote-reverse"&gt;
+            &lt;p&gt;Example&lt;/p&gt;
+            &lt;footer&gt;Example&lt;/footer&gt;
+            &lt;/blockquote&gt;
+        </pre>
+        
+        <h3>Blockquotes Example Code</h3>
+        <pre class="simplecode">
+            &lt;h1 class="text-capitalize"&gt;Headline one&lt;/h1&gt;
+            &lt;p class="text-left"&gt;&lt;abbr title="Example" class="Initialism"&gt;Example.&lt;/abbr>Example&lt;/p&gt;
+        </pre>
+        
+        <h3>List Styles Example Code</h3>
+        <pre class="simplecode">
+                &lt;ol class="list-unstyled"&gt;
+                &lt;li&gt;Example&lt;/li&gt;
+                &lt;li&gt;Example
+                &lt;ul&gt;
+                &lt;li&gt;Example&lt;/li&gt;
+                &lt;li&gt;Example&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li>Example&lt;/li&gt;
+                &lt;/ol&gt;
+
+                &lt;h2>Example&lt;/h2&gt;
+                &lt;ul class="list-inline"&gt;
+                &lt;li&gt;Example&lt;/li&gt;
+                &lt;li&gt;Example&lt;/li&gt;
+                &lt;li&gt;Example&lt;/li&gt;
+                &lt;/ul&gt;
+
+                &lt;h2&gt;Example&lt;/h2&gt;
+                &lt;dl class="dl-horizontal"&gt;
+                &lt;dt&gt;Example&lt;/dt&gt;
+                &lt;dd&gt;Example&lt;/dd&gt;
+                &lt;dt&gt;Example&lt;/dt&gt;
+                &lt;dd&gt;Example&lt;/dd&gt;
+                &lt;dt&gt;Example&lt;/dt&gt;
+                &lt;dd&gt;Example&lt;/dd&gt;
+                &lt;/dl&gt;
+        </pre>
+        
+    </div>
+</div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

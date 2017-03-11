@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Basic Page Structure</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/pagebreakdown.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+    <nav class="navbar navbar-default">
+  <div class="container">
+      <div class="navbar-header">
+      <a href="#" class="navbar-brand">
+        Web Technologies
+          </a>
+      </div>
+
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Home</a></li>
+        <li>
+          <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Content<span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+            <li><a href="HTMLEssentialTraining.html">HTML Essential Training</a></li>
+            <li><a href="Bootstrap3EssentialTraining.html">Bootstrap 3 Essential Training</a></li>
+            <li><a href="WebTechnologyFundamentals.html">Web Technology Fundamentals</a></li>
+            <li><a href="WordPressEcommerce.html">WordPress Ecommerce</a></li>
+            </ul>
+        </li>
+    </ul>
+    </div>
+</nav>
+
+<div class="content container">
+    <div class="row">
+            <div class="col-lg-12" >
+                <h2 class="page-header">Basic Page Structure</h2>
+                    </div>
+<div class="panel panel-default">
+    <div class="panel-body">
+        
+    <p><img class="leftimg" src="images/PageIconsHTML.png" align="left"><h3 class="padding">Exploring An HTML Doc.</h3>
+    So in Internet Explorer for example it has the developer tools. And in Firefox we have Firebug. And in Webkit browsers and in Chrome, we have what's known as the Webkit Inspector. So they allow us to sort of get a window into how documents are structured. Right click a web page and choose inspect element. It opens up the web kit inspector and this gives me access to the actual HTML itself. You can see I can begin to expand this.
+    </p>
+
+    <p><h3>Doctype Declarations</h3>
+    So, what the doctype is supposed to do is tell the browser or user agent which version of HTML that you'll be using so it knows which version of the syntax to use in parsing. You need to have a doctype declaration and you want the doctype to reflect the version of HTML that you'll be writing.
+    </p>
+
+    <p><h3>The Document Head</h3>
+     Directly after the opening HTML tag, you're going to find a document's head. Now the head element is where you'll place information about the document, references to things like external scripts and styles, and additional instructions to the browser about how the document should be rendered. Before you add the head of your document, you first have to add the HTML tag.
+    </p>
+
+    <p><h3>The Document Body</h3>
+    While the head of your document stores functional information that is largely invisible, the body is where all of your pages visible content is going to go. the first thing we want to do is add body tag. The body tag is not nested inside of the head tag. It is a sibling of the head tag. Meaning it is on equal level with it. So just after the head tag, open up a body tag, then close the body tag.
+    </p>
+
+    <p><h3>Understanding Content Models</h3>
+     Almost every element in HTML belongs to at least one content model. These content models help user agents know what type of content to expect within an element. And they control certain aspects of syntax, such as which elements can nest within other elements. Prior to HTML5, there were basically only two content types, block level and inline.
+    </p>
+
+        <h3>Example Code</h3>
+        <pre class="simplecode">
+        &lt;!DOCTYPE HTML&gt;
+            &lt;html lang="en"&gt;
+            &lt;head&gt;
+                &lt;meta charset="utf-8"&gt;
+                &lt;meta name="description" content="A page for exploring basic HTML documents"&gt;
+                &lt;title&gt;Basic HTML document&lt;/title&gt;
+            &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;h1&gt;Page content&lt;/h1&gt;
+                    &lt;p&gt;Page content&lt;/p&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+        </pre>
+        
+    </div>
+</div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

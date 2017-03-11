@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Navigation Components</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/pagebreakdown.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+    <nav class="navbar navbar-default">
+  <div class="container">
+      <div class="navbar-header">
+      <a href="#" class="navbar-brand">
+        Web Technologies
+          </a>
+      </div>
+
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Home</a></li>
+        <li>
+          <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Content<span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+            <li><a href="HTMLEssentialTraining.html">HTML Essential Training</a></li>
+            <li><a href="Bootstrap3EssentialTraining.html">Bootstrap 3 Essential Training</a></li>
+            <li><a href="WebTechnologyFundamentals.html">Web Technology Fundamentals</a></li>
+            <li><a href="WordPressEcommerce.html">WordPress Ecommerce</a></li>
+            </ul>
+        </li>
+    </ul>
+    </div>
+</nav>
+
+<div class="content container">
+    <div class="row">
+            <div class="col-lg-12" >
+                <h2 class="page-header">Navigation Components</h2>
+                    </div>
+<div class="panel panel-default">
+    <div class="panel-body">
+        
+    <p><img class="leftimg" src="images/PageIconsBOOT.png" align="left">
+        <h3 class="padding">Creating A Dropdown</h3>
+        Dropdowns are a very handy way to condense a lot of information into a very small space. starting out with a simple button, as well as an unordered list, and this will eventually become the dropdown. So the first step is to wrap both the button and the list with a DIV that has a class of dropdown. Then button and list inside. Next, add the data toggle equals dropdown attribute to the button.
+        </p>
+
+        <p><h3>Button Group</h3>
+        Another great component is called button groups. You can use it to create different kinds of button combinations. In order to place them into groups, you can add a div with a class of btn-groups. These become a group of unified buttons. For screen readers and usability, you need to add the role="group" as well Assigning a role to an element lets screen readers know about the expected functionality of that element. So it knows how to handle it properly. Now you should also add a label so that readers know what to say.
+        </p>
+
+        <p><h3>Nav Bars</h3>
+        Bootstrap navigation is one of the most complex components available in the framework. It's part of a family of elements that all share the nav class, and there are three different types of navs that you can create: including tabs, pills, and navbars.  You can place any number of elements inside navbars, but in order for them to align properly, you have to wrap them in special classes. When you view a navigation component on an access breakpoint, that means a breakpoint that is smaller than 768 pixels, the navigation is going to stack up on top of one another. In those instances, it's common to display something called a Hamburger menu that expands to display the complete list. Now Bootstrap offers some classes to be able to take care of that.
+        </p>
+
+        <p><h3>Breadcrumbs And Pagination</h3>
+        There are a few other navigation-related components that can help you with things like creating breadcrumbs, pagers, and numeric pagination.
+        </p>
+        
+        
+        <h3>Dropdown Example Code</h3>
+        <pre class="simplecode">
+            &lt;div class="dropdown"&gt;
+              &lt;button onclick="myFunction()" class="dropbtn">Dropdown&lt;/button&gt;
+              &lt;div id="myDropdown" class="dropdown-content"&gt;
+                &lt;a href="#"&gt;Link 1&lt;/a&gt;
+                &lt;a href="#"&gt;Link 2&lt;/a&gt;
+                &lt;a href="#"&gt;Link 3&lt;/a&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+        </pre>
+        
+        <h3>Button Groups Example Code</h3>
+        <pre class="simplecode">
+            &lt;div class="btn-group"&gt;
+              &lt;button type="button" class="btn btn-primary"&gt;Example&lt;/button&gt;
+              &lt;button type="button" class="btn btn-primary"&gt;ExampleExample&lt;/button&gt;
+              &lt;button type="button" class="btn btn-primary"&gt;Example&lt;/button&gt;
+            &lt;/div&gt;  
+        </pre>
+        
+        <h3>Nav Bar Example Code</h3>
+        <pre class="simplecode">
+            &lt;nav class="navbar navbar-default"&gt;
+              &lt;div class="container"&gt;
+                &lt;div class="navbar-header"&gt;
+                    &lt;button type="button" 
+                            class="navbar-toggle collapsed" 
+                            data-toggle="collapse" 
+                            data-target="#collapsemenu"
+                            aria-expanded="false"&gt;
+                        &lt;span class="sr-only"&gt;Toggle Navigation&lt;/span&gt;
+                        &lt;span class="icon-bar"&gt;&lt;/span&gt;
+                        &lt;span class="icon-bar"&gt;&lt;/span&gt;
+                        &lt;span class="icon-bar"&gt;&lt;/span&gt;
+                    &lt;/button&gt;
+                  &lt;a href="#" class="navbar-brand"&gt;
+                    Example
+                  &lt;/a&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/nav&gt;
+        </pre>
+        
+        <h3>Breadcrumb Example Code</h3>
+        <pre class="simplecode">
+            &lt;ul class="breadcrumb"&gt;
+              &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="#"&gt;Pictures&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="#"&gt;Summer 15&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;Example&lt;/li&gt;
+            &lt;/ul&gt;
+        </pre>
+        
+        <h3>Pagination Example Code</h3>
+        <pre class="simplecode">
+            &lt;nav>
+                &lt;ol class="pagination pagination-sm"&gt;
+                    &lt;li&gt;&lt;a href="#" aria-label="previous">&laquo;&lt;/a>&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#" aria-label="next"&gt;&raquo;&lt;/a&gt;&lt;/li&gt;
+                &lt;/ol&gt;
+            &lt;/nav&gt;
+        </pre>
+        
+    </div>
+</div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

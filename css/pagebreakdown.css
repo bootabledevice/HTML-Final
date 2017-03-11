@@ -1,0 +1,79 @@
+li{
+    font-style: normal;
+	font-size: 12px;
+	font-family: 'Open Sans', sans-serif;
+	padding-top: 2px;
+	text-align: left;
+    letter-spacing: 1px;
+}
+h4{
+	font-style: normal;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+}
+h3{
+	font-style: normal;
+	font-size: 19px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: left;
+    letter-spacing: 3px;
+}
+body {
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+.page-header{
+    font-weight: normal;
+    font-style: normal;
+	font-size: 45px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+    padding-bottom: 20px;
+}
+.glyphicon {
+    align-content: center;
+    color: black;
+    font-size: 30px;
+    padding-left: 10px;
+}
+.panel{
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+.section{
+    border-style: solid;
+    border-width: 5px;
+}
+.leftimg{
+    width: 200px;
+    height: 200px;
+}
+.simplecode{
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+p{
+    font-style: normal;
+	font-size: 15px;
+	font-family: 'Open Sans', sans-serif;
+}
+.indexcontent{
+    padding-top: 50px;
+    font-style: normal;
+	font-size: 12px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: left;
+    letter-spacing: 1px;
+}
+.content{
+    padding-top: 30px;
+}
+.padding{
+    padding-top: 110px;
+}

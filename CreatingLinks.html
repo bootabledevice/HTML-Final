@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Creating Links</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/pagebreakdown.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+    <nav class="navbar navbar-default">
+  <div class="container">
+      <div class="navbar-header">
+      <a href="#" class="navbar-brand">
+        Web Technologies
+          </a>
+      </div>
+
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Home</a></li>
+        <li>
+          <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Content<span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+            <li><a href="HTMLEssentialTraining.html">HTML Essential Training</a></li>
+            <li><a href="Bootstrap3EssentialTraining.html">Bootstrap 3 Essential Training</a></li>
+            <li><a href="WebTechnologyFundamentals.html">Web Technology Fundamentals</a></li>
+            <li><a href="WordPressEcommerce.html">WordPress Ecommerce</a></li>
+            </ul>
+        </li>
+    </ul>
+    </div>
+</nav>
+
+<div class="content container">
+    <div class="row">
+            <div class="col-lg-12" >
+                <h2 class="page-header">Creating Links</h2>
+                    </div>
+<div class="panel panel-default">
+    <div class="panel-body">
+        
+    <p><img class="leftimg" src="images/PageIconsHTML.png" align="left">
+        <h3 class="padding">Linking To Pages Within Your Site</h3>
+        The anchor element, which is used to create links within your sites. you might think that you would need to use the link element, but no the link element is used to request external resources for the page. To create a link on the page, you use the anchor element. Its syntax is fairly easy to grasp. You surround the content that you want to make into a clickable link with an anchor tag. Next, you add an href attribute that tells the browser where you'd like it to go when the link is clicked.
+    </p>
+
+        <p><h3>Linking To External Pages</h3>
+            Another very common function of links is to redirect users to pages and sites that are external to the site they're currently on. These are referred to as GLUT links. In order to link to an external site or page, you'll need to know the full URL for that site.
+        </p>
+
+        <p><h3>Linking To Downloadable Resources</h3>
+            Occasionally you may want to give users the ability to download a file or some type of resource from your site. In certain cases, for security reasons, for example, you may need to occasionally have scripting help you out with this but most of the time you can do it by just using simple link syntax combined with the new HTML5 download attribute.
+        </p>
+
+        <p><h3>Linking To Page Regions</h3>
+            In addition to linking to external pages and sites, anchors allow us to jump to specific sections within a document as well. These are known as fragment identifiers and can be extremely helpful in enhancing the navigation of your site.
+        </p>
+
+        <h3>Link Example Code</h3>
+        <pre class="simplecode">
+            &lt;a href="https://www.w3schools.com"&gt;Visit W3Schools.com!&lt;/a&gt;
+            &lt;a href="MyIndexFile.html"&gt;Understanding Your Market&lt;/a&gt;
+            &lt;a href="http://example.com/files/myfile.pdf" target="_blank"&gt;Download&lt;/a&gt;
+        </pre>
+        
+    </div>
+</div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

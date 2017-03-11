@@ -1,0 +1,26 @@
+body {
+    background-image: url("../images/backgrounddecpage.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+h2{
+    font-weight: bold;
+	font-style: normal;
+	font-size: 50px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+    letter-spacing: 3px;
+}
+h1{
+    font-weight: bold;
+	font-style: normal;
+	font-size: 25px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+    letter-spacing: 3px;
+    padding-top: 45px;
+}
+.container{
+    padding-top: 150px;
+}

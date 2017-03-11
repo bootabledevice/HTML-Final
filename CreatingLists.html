@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Creating Lists</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/pagebreakdown.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+    <nav class="navbar navbar-default">
+  <div class="container">
+      <div class="navbar-header">
+      <a href="#" class="navbar-brand">
+        Web Technologies
+          </a>
+      </div>
+
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Home</a></li>
+        <li>
+          <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Content<span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+            <li><a href="HTMLEssentialTraining.html">HTML Essential Training</a></li>
+            <li><a href="Bootstrap3EssentialTraining.html">Bootstrap 3 Essential Training</a></li>
+            <li><a href="WebTechnologyFundamentals.html">Web Technology Fundamentals</a></li>
+            <li><a href="WordPressEcommerce.html">WordPress Ecommerce</a></li>
+            </ul>
+        </li>
+    </ul>
+    </div>
+</nav>
+
+<div class="content container">
+    <div class="row">
+            <div class="col-lg-12" >
+                <h2 class="page-header">Creating Lists</h2>
+                    </div>
+<div class="panel panel-default">
+    <div class="panel-body">
+        
+    <p><img class="leftimg" src="images/PageIconsHTML.png" align="left">
+        <h3 class="padding">Unordered, ordered, And Definition Lists</h3>
+        Lists are incredibly useful ways of organizing content. HTML gives you there different types of lists to use based on how our content needs to be organized and grouped together. Anytime that you want a list, the first thing that you're going to do is your going to need a parent list tag. And that parent tag is going to describe what type of list it is that's going to follow. Lists are primarily a way of grouping information. You can use them for a lot of different things. It's not just displaying a list of items in your text. Are they grouped and are they grouped in a way that makes sense for each of them as individual items within the same group? Meaning, do they belong to that sort of same hierarchy. If so then a list actually is a compelling way to organize them. There are three types of lists, unordered, ordered, and description (also known as definition.)
+    </p>
+
+        <h3>Description List Example Code</h3>
+        <pre class="simplecode">
+            &lt;dl>
+                &lt;dt&gt;Coffee&lt;/dt&gt;
+                &lt;dd&gt;Black hot drink&lt;/dd&gt;
+                &lt;dt&gt;Milk&lt;/dt&gt;
+                &lt;dd&gt;White cold drink&lt;/dd&gt;
+            &lt;/dl&gt;
+        </pre>
+        
+        <h3>Unordered List Example Code</h3>
+        <pre class="simplecode">
+            &lt;ul&gt;
+                &lt;li&gt;Coffee&lt;/li&gt;
+                &lt;li&gt;Black hot drink&lt;/li&gt;
+                &lt;li&gt;Milk&lt;/li&gt;
+                &lt;li&gt;White cold drink&lt;/li&gt;
+            &lt;/ul&gt;
+        </pre>
+        
+        <h3>Ordered List Example Code</h3>
+        <pre class="simplecode">
+            &lt;ol&gt;
+                &lt;li&gt;Coffee&lt;/li&gt;
+                &lt;li&gt;Black hot drink&lt;/li&gt;
+                &lt;li&gt;Milk&lt;/li&gt;
+                &lt;li&gt;White cold drink&lt;/li&gt;
+            &lt;/ol>
+        </pre>
+        
+    </div>
+</div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

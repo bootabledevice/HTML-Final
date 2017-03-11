@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formatting Page Content</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/pagebreakdown.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+    <nav class="navbar navbar-default">
+  <div class="container">
+      <div class="navbar-header">
+      <a href="#" class="navbar-brand">
+        Web Technologies
+          </a>
+      </div>
+
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Home</a></li>
+        <li>
+          <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Content<span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+            <li><a href="HTMLEssentialTraining.html">HTML Essential Training</a></li>
+            <li><a href="Bootstrap3EssentialTraining.html">Bootstrap 3 Essential Training</a></li>
+            <li><a href="WebTechnologyFundamentals.html">Web Technology Fundamentals</a></li>
+            <li><a href="WordPressEcommerce.html">WordPress Ecommerce</a></li>
+            </ul>
+        </li>
+    </ul>
+    </div>
+</nav>
+    
+<div class="content container">
+    <div class="row">
+            <div class="col-lg-12" >
+                <h2 class="page-header">Formatting Page Content</h2>
+                    </div>
+<div class="panel panel-default">
+    <div class="panel-body">
+        
+        <p>
+        <img class="leftimg" src="images/PageIconsHTML.png" align="left">
+        <h3 class="padding">Formatting Content With HTML</h3>
+        Remember HTML is a markup language. And that means that it uses tags to identify content on the page. Well once you're comfortable with the syntax behind how formatting content works. Then it really just becomes a matter of learning which tags are available to you and the options that you have when you're using them.
+        </p>
+
+        <p><h3>Using Headings</h3>
+            Headings are used to structure pages and determine content hierarchy. So, to add a heading, your going to use a heading tag. And you'll start by using the first heading, which is the h1 heading. You're going to need both an opening and a closing tag. Now there are six heading tags (h1, h2, h3, h4, h5, and h6.)
+        </p>
+
+        <p><h3>Formatting Paragraphs</h3>
+            Paragraphs are perhaps the most basic formatting tag that you'll use in HTML. In fact, if you don't wrap text in an element, most browsers are going to default the formatting like a paragraph. HTML has to be backwards compatible, that means they have to support earlier versions of HTML. And they also support really loose syntax rules, for example having unformatted content would cause some languages to simply fail and the whole page to fail. HTML is much more forgiving. It basically says well, you forgot to format it, probably wanted to format it like a paragraph so that's what I am going to do.
+        </p>
+
+        <p><h3>Controlling Line Breaks</h3>
+            There will be times when you need to force a hard return in your copy, but you don't necessarily want to start a brand new paragraph, or in the other new element. In those instances, you're going to want to use a line break. 
+        </p>
+
+        <p><h3>Displaying Special Characters</h3>
+            There are going to be times that you're going to want to use a character or a symbol that's not readily available on your keyboard. What's more, you might want to use a symbol that's actually reserved for use by HTML that you're really not supposed to use. For example, using the left or right angle brackets in your content could actually cause rendering errors. So if you want to use those special characters, you're going to have to use something, that's called a named character entity.
+        </p>
+
+        <p><h3>Controlling Whitespace</h3>
+            As you first start authoring HTML you're probably going to notice what seems to be a really curious behavior among browsers regarding your use of whitespace. You see, no matter how much whitespace you put in your content, your browser is going to, for the most part, ignore everything after that first space of character. To add additional whitespace you must use the nonbreaking space entities.
+        </p>
+
+        <p><h3>Displaying Images</h3>
+            Now images are considered what we call replaced content. And that means that when they're encountered, the browser or user agent will use the information within that tag to replace its contents with the resource that you've asked for. With that in mind, the attributes of the image tag become incredibly important. The src or source attribute is used to tell the browser where to actually go out and find that image. The alt attribute allows you to pass along descriptive text which is representative of the image, and is very useful for screen readers or other assistive devices. You also have the width and the height attributes. Now these are optional, but they can be used to pass the dimensions of the image to the browser. If you omit them, the browser will still display the image at its native width and height, but there might be some rendering issues. So it's always a good idea to put them in there, unless there's a compelling reason to leave them off.
+        </p>
+
+        <h3>Heading Example Code</h3>
+        <pre class="simplecode">
+            &lt;h1&gt;This is heading 1&lt;/h1&gt;
+                &lt;h2&gt;This is heading 2&lt;/h2&gt;
+                    &lt;h3&gt;This is heading 3&lt;/h3&gt;
+                    &lt;h4&gt;This is heading 4&lt;/h4&gt;
+                &lt;h5&gt;This is heading 5&lt;/h5&gt;
+            &lt;h6&gt;This is heading 6&lt;/h6&gt;
+        </pre>
+        
+        <h3>Paragraph Example Code</h3>
+        <pre class="simplecode">
+            &lt;p&gt;This is some text in a paragraph.&lt;/p&gt;
+        </pre>
+        
+        <h3>Line Break Example Code</h3>
+        <pre class="simplecode">
+            &lt;p&gt;This text contains&lt;br&gt;a line break.&lt;/p&gt;
+        </pre>
+        
+        <h3>Special Characters Example Code</h3>
+        <pre class="simplecode">
+            &lt;p&gt;I will display &euro; ("And"euro;) &lt;/p&gt;
+        </pre>
+        
+        <h3>Image Example Code</h3>
+        <pre class="simplecode">
+        &lt;img src="images/Example.png" alt="Example Name"&gt;
+        </pre>
+        
+    </div>
+</div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
